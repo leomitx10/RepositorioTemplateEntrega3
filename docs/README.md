@@ -7,7 +7,7 @@ Demais diretrizes constam no Moodle.
 
 **!! *Não coloque os nomes dos alunos no título do repositório*. !!**
 
-**!! *Exemplo de título correto: 2025.1(T01)_G1_Jogo_Entrega_03*. !!** 
+**!! *Exemplo de título correto: 2025.1(T01)_G1_Embarcado_Entrega_03*. !!** 
  
  (Apague esses comentários)
 
