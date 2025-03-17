@@ -3,11 +3,11 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial.
 As seções do Template NÃO DEVEM SER OMITIDAS, sendo TODAS RELEVANTES.
 Demais diretrizes constam no Moodle.
 
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto)_(Entrega_03)*. !!** 
+**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)(Turma)_(Grupo)_(NomeDoProjeto)_(Entrega_03)*. !!** 
 
 **!! *Não coloque os nomes dos alunos no título do repositório*. !!**
 
-**!! *Exemplo de título correto: 2024.2_G1_Jogo_Entrega_03*. !!** 
+**!! *Exemplo de título correto: 2025.1(T01)_G1_Jogo_Entrega_03*. !!** 
  
  (Apague esses comentários)
 
