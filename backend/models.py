@@ -49,6 +49,17 @@ class Fornecedor(BaseModel):
     nome: str
     tags: List[str] = []
     contato: str
+    portfolio: Optional[str] = None
+    
+    class Config:
+        schema_extra = {
+            "example": {
+                "nome": "Fornecedor Exemplo",
+                "tags": ["comida", "bebida"],
+                "contato": "contato@fornecedor.com",
+                "portfolio": "Diversos serviços de alimentação"
+            }
+        }
 
 class Portfolio(BaseModel):
     contatos: str
@@ -99,6 +110,16 @@ class Festa(BaseModel):
                 "temas": ["Ano Novo", "Festa"]
             }
         }
+
+class TipoNotificacao(str, Enum):
+    EMAIL = "EMAIL"
+    WHATSAPP = "WHATSAPP"
+    TELEGRAM = "TELEGRAM"
+
+class MensagemNotificacao(BaseModel):
+    destinatario: str
+    mensagem: str
+    tipo_notificacao: TipoNotificacao = TipoNotificacao.EMAIL
 
 class SistemaDeSugestao(BaseModel):
     pass

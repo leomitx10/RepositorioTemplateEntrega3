@@ -6,6 +6,7 @@ Este projeto implementa uma API para gerenciamento de eventos, festas, convites 
 
 - `main.py` - Aplicação principal com endpoints FastAPI
 - `models.py` - Modelos Pydantic que representam as entidades do sistema
+- `notification.py` - Implementação do padrão Factory Method para sistema de notificações
 - `requirements.txt` - Dependências do projeto
 
 ## Instalação
@@ -38,6 +39,30 @@ A documentação interativa estará disponível em:
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
 
+## Padrões de Projeto Implementados
+
+### Factory Method
+
+O padrão Factory Method foi implementado no sistema de notificações, permitindo:
+
+- Criação de diferentes tipos de notificação (Email, WhatsApp, Telegram)
+- Extensibilidade para adicionar novos canais de notificação
+- Separação da lógica de criação da lógica de uso de notificações
+
+Para usar o sistema de notificação, envie uma requisição POST para:
+```
+/notificacoes/
+```
+
+Com um corpo JSON como:
+```json
+{
+  "destinatario": "usuario@exemplo.com",
+  "mensagem": "Sua festa foi criada com sucesso!",
+  "tipo_notificacao": "EMAIL"  # Ou "WHATSAPP", "TELEGRAM"
+}
+```
+
 ## Recursos Implementados
 
 - Gerenciamento de usuários
@@ -46,4 +71,4 @@ A documentação interativa estará disponível em:
 - Lista de desejos
 - Sistema de convites
 - Recomendação de fornecedores
-```
+- Sistema de notificações (Factory Method)
